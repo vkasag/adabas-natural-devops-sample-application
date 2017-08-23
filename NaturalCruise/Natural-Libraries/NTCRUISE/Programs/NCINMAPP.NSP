@@ -93,7 +93,7 @@ DECIDE ON FIRST VALUE OF *PF-KEY
   VALUE 'PF2' PERFORM SUB-FIND-CRUISE
     REINPUT FULL 'OK - Cruise shown for Id' MARK *#CR-ID-IO
   VALUE 'PF3' STOP
-  NONE  REINPUT 'Really Sorry - Function key not allocated'
+  NONE  REINPUT 'REally Sorry - Function key not allocated'
 END-DECIDE
 /*
 /*
