@@ -93,7 +93,7 @@ DECIDE ON FIRST VALUE OF *PF-KEY
   VALUE 'PF2' PERFORM SUB-FIND-CRUISE
     REINPUT FULL 'OK - Cruise shown for Id' MARK *#CR-ID-IO
   VALUE 'PF3' STOP
-  NONE  REINPUT 'REallly Sorry - Function key not allocated'
+  NONE  REINPUT 'Sorry - Function key not allocated'
 END-DECIDE
 /*
 /*
@@ -101,7 +101,7 @@ DEFINE SUBROUTINE SUB-FIND-CRUISE
 FIND NCCRUISE CRUISE-ID = #CR-ID-IO
   IF NO RECORDS FOUND
     RESET MAPFIELDS
-    REINPUT FULL 'Sorry - no Cruise found for Id' MARK *#CR-ID-IO
+    REINPUT FULL 'Really Sorry - no Cruise found for Id' MARK *#CR-ID-IO
   END-NOREC
 /* provoke Error
 /*  COMPUTE NCCRUISE.CRUISE-ID = NCCRUISE.CRUISE-ID / 0
